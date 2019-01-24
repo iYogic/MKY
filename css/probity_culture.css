@@ -1,0 +1,249 @@
+/*Info*/
+.content_info{
+	width: 1736px;
+	min-height:480px;
+	margin: 0 auto;
+	display: flex;
+}
+
+/*Left*/
+.content_left{
+	flex: 1;
+}
+.con_left_nav{
+	width: 716px;
+	height: 46px;
+	line-height: 46px;
+	overflow: hidden;
+	border-bottom: 1px red solid;
+	margin-bottom: 16px;
+}
+.con_left_nav_img{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.con_left_nav_txt{
+	margin-left: 5px;
+	font-size:26px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.con_left_info{
+	width: 716px;
+	height: 608px;
+	margin-top: 10px;
+	overflow: hidden;
+	background-image: url("../img/bg6.jpg");
+	background-size: 100% 100%;
+}
+/*Row*/
+.row{
+	width: 100%;
+	height: 40px;
+	/*background: red;*/
+	margin-top: 50px;
+	position: relative;
+}
+.first_row div{
+	position: absolute;
+	height: 100%;
+	cursor: pointer;
+}
+.first_row_box1{
+	width: 18%;
+	top: 8px;
+	left: 12%;
+}
+.first_row_box2{
+	width: 28%;
+	height: 68px!important;
+	top: -18px;
+	left: 34%;
+}
+.first_row_box3{
+	width: 22%;
+	top: 30px;
+	right: 18%;
+	height: 68px!important;
+}
+.two_row div{
+	position: absolute;
+	height: 100%;
+	cursor: pointer;
+}
+.two_row_box1{
+	width: 20%;
+	height: 48px!important;
+	top: 42px;
+	left: 9%;
+}
+.two_row_box2{
+	width: 23%;
+	height: 48px!important;
+	top: 22px;
+	left: 43%;
+}
+.two_row_box3{
+	width: 20%;
+	height: 48px!important;
+	top: 40px;
+	right: 14%;
+}
+.three_row{
+	margin-top: 30px!important;
+}
+.three_row div{
+	position: absolute;
+	height: 100%;
+	cursor: pointer;
+}
+.three_row_box1{
+	width: 16%;
+	top: 59px;
+	left: 54%;
+}
+.three_row_box2{
+	width: 23%;
+	height: 48px!important;
+	top: 56px;
+	right: 6%;
+}
+
+/*Right*/
+.content_right{
+	flex: 1;
+	/*background: yellow;*/
+}
+.con_right_nav{
+	width: 100%;
+	position: relative;
+}
+.con_right_nav_img{
+	width: 416px;
+	height: 36px;
+	position: absolute;
+	left: 0px;
+	top: -35px;
+}
+/*Info*/
+.con_right_info{
+	margin-top: 10px;
+/*	height: 470px;
+	overflow: hidden;*/
+	/*background: pink;*/
+}
+.con_right_info li{
+	width: 100%;
+	min-height: 50px;
+	border-bottom: 2px red dashed;
+	padding-bottom: 6px;
+}
+.con_right_txt_box{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+.con_right_info_txt{
+	float: left;
+	font-weight: bolder;
+	font-size:20px;
+}
+.con_right_info_img{
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-left: 5px;
+	margin-top:2px;
+}
+/**/
+.con_right_showimg_box{
+	display: flex;
+	width: 100%;
+	min-height: 140px!important;
+	/*background: yellow;*/
+}
+.con_right_showimg_box li{
+	flex: 1;
+	margin:0px 5px;
+	border: none!important;
+	cursor:pointer;
+}
+.con_show_img{
+	width: 100%;
+	margin-bottom: 5px;
+}
+.con_show_txt{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size:17px;
+}
+/**/
+.con_right_show_box{
+	width: 95%;
+	margin-left: 5%;
+}
+.con_right_show_box li{
+	width: 100%;
+	min-height: 20px!important;
+	height: 25px!important;
+	line-height: 25px;
+	display: flex;
+	border: none!important;
+	cursor: pointer;
+}
+.con_right_show_txt{
+	flex: 4;
+	overflow: hidden;
+	text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size:17px;
+}
+.con_right_show_date{
+	flex: 1;
+	text-align: right;
+	overflow: hidden;
+	text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+/*1920像素,触摸屏*/
+@media screen and (min-width:1000px){
+	.content_box{
+		width: 98%;
+		height:94%;
+		margin: 0 auto;
+		background-image: url("../img/bg3.jpg");
+		background-size: 100% 100%;
+		color:black!important;
+	}
+	.content_info{
+		margin-top:130px;
+	}
+}
+/*1920像素以下,触摸屏*/
+@media screen and (max-width:1000px){
+	.content_box{
+		width: 98%;
+		height:93%;
+		margin: 0 auto;
+		background-image: url("../img/bg3.jpg");
+		background-size: 100% 100%;
+		color:black!important;
+	}
+
+
+}

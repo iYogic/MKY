@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>党建荣誉墙</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/party_building_honor.css"> -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/vue.min.js"></script>
+	<style>
+		*{margin: 0; padding: 0;border: 0; list-style-type: none; text-decoration: none!important;font-size: 16px;}
+		img{width: 100%;height: 100%;}
+		a{color: #2D2E2D!important;}
+		html,body{
+			width: 100%;
+			height: 100%;
+			background:black;
+			font-family: "Microsoft YaHei";
+		}
+		.head_box{
+			width: 100%;
+			height: 35px;
+			padding-top: 3px;
+		}
+		.head_nav{
+			width: 98%;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.head_nav_img{
+			width: 150px;
+			height: 100%;
+			float: right;
+			cursor:pointer;
+		}
+		/*Icon*/
+		.content_box{
+			width: 98%;
+			margin: 0 auto;
+			background-image: url("img/bg3.jpg");
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.content_icon_box{
+			width: 100%;
+			height: 75px;
+			margin-bottom: 40px;
+			position: relative;
+		}
+		.content_icon{
+			width: 130px;
+			height: 100px;
+			position: absolute;
+			top: -30px;
+			left: 20px;
+		}
+
+		.content_info{
+			width: 1736px;
+			height: 100%;
+			max-height:800px; 
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.content_info_child{
+			width: 1766px;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: scroll;
+
+		}
+		.content_tab_div {
+			width: 1766px;
+			height: 100%;
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.info_childone,.info_childthree{
+			flex:2;
+		}
+		.info_childtwo{
+			flex:1;
+		}
+		.info_childtwo img{
+			width:81%;
+			height:100%;
+			margin-left:34px;
+		}
+		.con_show_min li{
+			width: 100%;
+			height: 246px;
+		}
+		.con_show_min{
+			position: relative;
+		}
+		.con_left_first{
+			position: absolute;
+			left:10px;
+			top:116px;
+		}
+		.con_left_second{
+			position: absolute;
+			left:10px;
+			top:460px;
+		}
+		.con_right_first{
+			position: absolute;
+			right:60px;
+			top:286px;
+		}
+
+		.con_right_firstb{
+			position: absolute;
+			right:60px;
+			top:166px;
+		}
+		.con_right_second{
+			position: absolute;
+			right:60px;
+			top:576px;
+		}
+		.con_right_secondb{
+			position: absolute;
+			right:60px;
+			top:521px;
+		}
+		/*图标开始*/
+		.title_icon{
+			position: relative;
+		}
+		.title_icon img{
+			width: 60%;
+			height: 30px;
+		}
+		.title_txt{
+			position: absolute;
+			top:3px;
+			left:3px;
+			color:#fff;
+			font-size: 18px;
+
+		}
+		.show_info_min {
+			width: 97%;
+			height: 146px;
+			border: 2px solid #dedede;
+			position: relative;
+			padding:10px;
+		}
+		.show_info_tetx {
+			width: 70%;
+			height: 120px;
+			line-height: 30px;
+			text-indent: 2em;
+			padding: 5px 2px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		.show_info_head {
+			width: 26%;
+			height: 100%;
+			position: absolute;
+			border: 2px solid #dedede;
+			border-radius: 50%;
+			top: -21%;
+			right: 2%;
+		}
+		/*css3 media开始*/
+		/*1920像素,触摸屏*/
+		@media screen and (min-width:200px){
+			.content_box{
+				width: 98%;
+				height:93%;
+				margin: 0 auto;
+				background-image: url("img/bg3.jpg");
+				background-size: 100% 100%;
+			}
+		}
+		/*1920像素以下,触摸屏*/
+		@media screen and (max-width:200px){
+			.content_box{
+				width: 98%;
+				height:93%;
+				margin: 0 auto;
+				background-image: url("img/bg3.jpg");
+				background-size: 100% 100%;
+			}	
+		}
+
+	</style>
+</head>
+<body>
+	<!-- Head -->
+	<div class="head_box">
+		<div class="head_nav">
+			<div class="head_nav_img"><img src="img/b.png" alt="" onclick="window.location.href='index.aspx'"></div>
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="content_box">
+		<!-- Icon -->
+		<div class="content_icon_box">
+			<div class="content_icon"><img src="img/58.png" alt="" ></div>
+		</div>
+		<div class="content_info">
+			<div class="content_info_child" id="honor_app">
+				<div class="content_tab_div" >
+					<div class="info_childone">
+						<ul class="con_show_min con_show_min_l">
+							<li class="con_top con_left_first">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>
+							<li class="con_bot  con_left_second">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>	
+						</ul>
+					</div>
+					<div class="info_childtwo"><img src="img/party_building_honor/5.png" alt=""></div>
+					<div class="info_childthree">
+						<ul class="con_show_min con_show_min_l">
+							<li class="con_top  con_right_first">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>
+							<li class="con_bot  con_right_second">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>	
+						</ul>
+					</div>
+				</div>
+				<div class="content_tab_div">
+					<div class="info_childone">
+						<ul class="con_show_min con_show_min_l">
+							<li class="con_top  con_left_first">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>
+							<li class="con_bot  con_left_second">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>	
+						</ul>
+					</div>
+					<div class="info_childtwo "><img src="img/party_building_honor/7.png" alt="" class="info_midsed_img"></div>
+					<div class="info_childthree">
+						<ul class="con_show_min con_show_min_l">
+							<li class="con_top  con_right_firstb">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>
+							<li class="con_bot  con_right_secondb">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>	
+						</ul>
+					</div>
+				</div>
+				<div class="content_tab_div">
+					<div class="info_childone">
+						<ul class="con_show_min con_show_min_l">
+							<li class="con_top  con_left_first">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>
+							<li class="con_bot  con_left_second">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>	
+						</ul>
+					</div>
+					<div class="info_childtwo "><img src="img/party_building_honor/7.png" alt="" class="info_midsed_img"></div>
+					<div class="info_childthree">
+						<ul class="con_show_min con_show_min_l">
+							<li class="con_top  con_right_firstb">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>
+							<li class="con_bot  con_right_secondb">
+								<div class="title_icon">
+									<img src="img/61.png" alt="">
+									<span class="title_txt">2018年08月08日</span>
+								</div>
+								<div class="show_info_min">
+									<div class="show_info_tetx">
+										党的基层组织是党在社会基层组织中的战斗堡垒，是党的全部工作和战斗力的基础。党的基层组织担负着直接联系群众、宣传群众、组织群众、团结群众、把党的路线、方针、政策落实到基层的重任。其基本任务是：(1)宣传和执行党的路线、方针、政策，宣传和执行党中央、上级组织和本组织的决议，充分发挥党员的先锋模范作用，团结、组织党内外的干部和群众，努力完成本单位所担负的任务。(2)组织党员认真学习马克思列宁主义、毛泽东思想、邓小平理论和党的路线、方针、政策及决议，学习党的基本知识和科学、文化、业务知识。
+									</div>
+									<div class="show_info_head">
+										<img src="img/59.png" alt="">
+									</div>
+								</div>
+							</li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

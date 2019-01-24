@@ -1,0 +1,97 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="details.aspx.cs" Inherits="details" %>
+
+<%@ Assembly Name="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>玫琳凯详细页面</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<style>
+		html,body{
+			margin: 0; 
+			padding: 0;
+			border: 0; 
+			width: 100%;
+			height: 100%;
+			font-size: 14px;
+			background:black;
+		}
+		.head_box a,.content_box a{
+			color: #2D2E2D!important;
+			text-decoration: none!important;
+		}
+		.head_box img,.content_box img{
+			width: 100%;
+			height: 100%;
+		}
+		.head_box ul,.content_box ul{
+			list-style-type: none;
+		}
+		.head_box{
+			width: 100%;
+			height: 35px;
+			padding-top: 3px;
+		}
+		.head_nav{
+			width: 98%;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.head_nav_img{
+			width: 150px;
+			height: 100%;
+			float: right;
+			cursor:pointer;
+		}
+		/*Icon*/
+		.content_box{
+			width: 98%;
+			height: 94%;
+			margin: 0 auto;
+			background-image: url("img/bg3.jpg");
+			background-size: 100% 100%;
+			text-align: center;
+		}
+		.contchild_first{
+			width: 80%;
+			margin: 0 auto;
+			padding-top: 6%;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		.contchild_second{
+			width: 80%;
+			margin: 0 auto;
+			height: 50px;
+			line-height: 50px;
+		}
+		.contchild_three{
+			width: 80%;
+			margin: 0 auto;
+			text-align: left;
+			text-indent: 2em;
+			line-height: 1.5em;
+		}
+	</style>
+</head>
+<body>
+	<!-- Head -->
+	<div class="head_box">
+		<div class="head_nav">
+			<div class="head_nav_img" onclick="window.location.href='index.apsx'">
+				<img src="img/b.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- Content -->
+	<div class="content_box">
+		<div class="contchild_first">测试标题测试标题测试标题测试标题</div>
+		<div class="contchild_second">2018-04-09</div>
+		<div class="contchild_three">
+			测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+		</div>
+	</div>
+</body>
+</html>

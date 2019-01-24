@@ -1,0 +1,81 @@
+/*Info*/
+.content_info{
+	width: 1736px;
+	margin: 0 auto;
+	display: flex;
+	margin-bottom: 24px;
+	font-family: "Microsoft YaHei";
+}
+.content_info span{
+	flex: 1;
+	margin-right: 18%;
+	cursor: pointer;
+}
+.del_side{
+	margin: 0px!important;
+}
+.textarea_box{
+	width: 1736px;
+	height: 468px;
+	margin: 0 auto;
+	overflow:hidden;
+	
+}
+.textarea_boxdiv{
+	width: 100%;
+	height: 100%;
+	resize: none;
+	outline: none;
+	border: 3px solid #dedede;
+	font-size: 24px!important;
+	line-height: 39px;
+	font-family: "Microsoft YaHei";
+	padding:26px;
+	box-sizing:border-box;
+	background-color:#fff;
+	overflow-x: hidden;
+	overflow-y:scroll;
+}
+.textarea_box_dangzhang,.textarea_box_xuexi{
+    display:none
+}
+/*More*/
+.more_box{
+	width: 1736px;
+	height: 22px;
+	margin: 0 auto;
+	margin-top: 26px;
+	text-align: right;
+}
+.more_min_box{
+	width: 126px;
+	height: 33px;
+	text-align: right;
+	cursor: pointer;
+	float: right;
+}
+/*css3 media开始*/
+/*1920像素,触摸屏*/
+@media screen and (min-width:1000px){
+	.content_box{
+		width: 98%;
+		height:94%;
+		margin: 0 auto;
+		background-image: url("../img/bg3.jpg");
+		background-size: 100% 100%;
+	}
+	.content_info{
+		margin-top:140px;
+	}
+	
+}
+/*1920像素以下,触摸屏*/
+@media screen and (max-width:1000px){
+	.content_box{
+		width: 98%;
+		height:93%;
+		margin: 0 auto;
+		background-image: url("../img/bg3.jpg");
+		background-size: 100% 100%;
+	}	
+}

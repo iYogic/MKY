@@ -1,0 +1,83 @@
+/*Show*/
+.content_show_sum{
+	width: 1736px;
+	min-height: 400px;
+	margin: 0 auto;
+	background: white;
+	border: 1px solid #C6C4C5;
+	font-family: "Microsoft YaHei";
+	height:100%;
+	max-height:716px;
+	overflow:hidden;
+	margin-top:5%;
+}
+.content_show{
+	width: 1736px;
+	min-height: 300px;
+	margin: 0 auto;
+	background: white;
+	font-family: "Microsoft YaHei";
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.con_show_list
+{
+    width:100%;
+ }
+.con_show_box{
+	width: 100%;
+	margin-left: 50px;
+	margin-top: 26px;
+	margin-bottom:26px;
+	list-style-type:disc!important;
+}
+.con_show_box li{
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	list-style-type:disc!important;
+}
+.con_show_box li span{
+	cursor: pointer;
+	font-size:21px;
+	font-family: "Microsoft YaHei";
+}
+.con_show_txt{
+	display: inline-block;
+	width: 92%;
+	font-size:21px;
+}
+.con_show_date{
+	display: inline-block;
+	text-align: right;
+	color: gray;
+	font-size:21px;
+}
+
+.top_left_dytitle,.top_left_dydate,.top_left_dycont
+{
+    cursor:pointer;
+    }
+/*css3 media开始*/
+/*1920像素,触摸屏*/
+@media screen and (min-width:1000px){
+	.content_box{
+		width: 98%;
+		height:94%;
+		margin: 0 auto;
+		background-image: url("../img/bg3.jpg");
+		background-size: 100% 100%;
+	}
+	
+}
+/*1920像素以下,触摸屏*/
+@media screen and (max-width:1000px){
+	.content_box{
+		width: 98%;
+		height:93%;
+		margin: 0 auto;
+		background-image: url("../img/bg3.jpg");
+		background-size: 100% 100%;
+	}	
+}

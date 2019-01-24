@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>区域化党建</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/party_building.css">
+</head>
+<body>
+	<!-- Head -->
+	<div class="head_box">
+		<div class="head_nav">
+			<div class="head_nav_img" onclick="window.location.href='index.aspx'"><img src="img/b.png" alt=""></div>
+		</div>
+	</div>
+	<!-- Content -->
+	<div class="content_box">
+		<!-- Icon -->
+		<div class="content_icon_box">
+			<div class="content_icon"><img src="img/50.png" alt=""></div>
+		</div>
+		<!-- Info -->
+		<div class="content_info">
+			<div class="con_left_box">
+				<div class="swiper-container index_swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="#"><img src="img/bg7.jpg"></a></div>
+						<div class="swiper-slide"><a href="#"><img src="img/bg6.jpg"></a></div>
+						<div class="swiper-slide"><a href="#"><img src="img/38.png"></a></div>
+						<div class="swiper-slide"><a href="#"><img src="img/40.png"></a></div>
+					</div>
+					<!-- Add Pagination 添加分割点 -->
+					<!-- <div class="swiper-pagination"></div> -->
+					<!-- Add Arrows  添加左右点 -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+			<div class="con_right_box">
+				<div class="con_show_box">
+					<!-- First -->
+					<div class="con_info_title">
+						<div class="con_info_title_img"><img src="img/51.png" alt=""></div>
+					</div>
+					<ul class="info_show_box">
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+					</ul>
+					<!-- Two -->
+					<div class="con_info_title">
+						<div class="con_info_title_img"><img src="img/52.png" alt=""></div>
+					</div>
+					<ul class="info_show_box">
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+					</ul>
+					<!-- three -->
+					<div class="con_info_title">
+						<div class="con_info_title_img"><img src="img/53.png" alt=""></div>
+					</div>
+					<ul class="info_show_box">
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+						<li>
+							<span class="con_show_txt">机关第二党支部学习“七一”讲话 努力把对党的忠诚忠贞落实到工作中</span>
+							<span class="con_show_date">12-12</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	var swiper=new Swiper('.index_swiper', {
+		pagination: '.swiper-pagination',
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+
+		paginationClickable: true,
+
+		loop: true,
+		autoplay:4000,
+		autoplayDisableOnInteraction: false,
+		});
+	// Show or Hide
+	// $(".index_swiper").hover(function () {
+	// 	$(".swiper-button-prev,.swiper-button-next").stop().fadeIn()
+	// },function () {
+	// 	$(".swiper-button-prev,.swiper-button-next").stop().fadeOut()
+	// })
+	//滑过悬停
+	$(".index_swiper").mouseenter(function () {
+		swiper.stopAutoplay();
+	}).mouseleave(function(){
+		swiper.startAutoplay();
+	});
+</script>
+</html>
